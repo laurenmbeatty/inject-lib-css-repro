@@ -13,7 +13,7 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "repository": "https://gitlab.com/zapier/design-systems/design-system/-/tree/main/packages/design-system",
+  "repository": "https://github.com/laurenmbeatty/inject-lib-css-repro",
   "license": "UNLICENSED",
   "scripts": {
     "build": "vite build"
