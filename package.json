@@ -1,0 +1,44 @@
+{
+  "name": "pretend-library",
+  "version": "0.0.0",
+  "description": "Bug reproduction for vite-plugin-lib-inject-css",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "repository": "https://gitlab.com/zapier/design-systems/design-system/-/tree/main/packages/design-system",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "glob": "^10.3.12",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup-preserve-directives": "^1.1.1",
+    "vite": "^5.2.10",
+    "vite-plugin-lib-inject-css": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.9.0 || ^17.0.0 || ^18.0.0"
+  },
+  "files": [
+    "README.md",
+    "/dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ]
+}
