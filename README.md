@@ -3,6 +3,8 @@
 I'm using pnpm `8.12.1`
 node `18.19.1`
 
+I'm on a MacOS Intel machine.
+
 How to reproduce:
 
 ```bash
